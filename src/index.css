@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  font-size: 1.5vw;
   background-color: #55a053;
   border: 4px solid;
   margin-top: 2%;
@@ -11,10 +12,22 @@ body {
 
 #title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 65px;
+  font-size: 5.2vw;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+button {
+  background-color: #55a053;
+  border: none;
+  outline:none;
+  text-decoration:none;
+  }
+
+  button:hover {
+    background-color: #428040;
+    border-radius: 10px;
+  }
