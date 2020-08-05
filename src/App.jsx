@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+const weapons = ["rock", "paper", "scissors"];
 class App extends Component {
 
 startGame = (e) => {
   const playerWeapon = e.target.id;
+  const computerWeapon = weapons[Math.floor(Math.random() * weapons.length)];
 }
 
 render() {
