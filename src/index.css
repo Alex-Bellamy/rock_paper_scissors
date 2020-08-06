@@ -32,3 +32,8 @@ button {
     background-color: #428040;
     border-radius: 10px;
   }
+
+  #outcome {
+    background-color: #13090b;
+    color: #663322;
+  }
