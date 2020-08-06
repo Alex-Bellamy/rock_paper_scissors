@@ -2,10 +2,21 @@ import React, { Component } from "react";
 
 const weapons = ["rock", "paper", "scissors"];
 class App extends Component {
+  state = {
+    playerWeapon: [],
+    computerWeapon: [],
+    outcome: [],
+  };
+
   startGame = (e) => {
     const playerWeapon = e.target.id;
     const computerWeapon = weapons[Math.floor(Math.random() * weapons.length)];
     const outcome = this.Outcome(playerWeapon, computerWeapon);
+    this.setState({
+      playerWeapon: playerWeapon,
+      computerWeapon: computerWeapon,
+      outcome: outcome,
+    });
   };
 
   Outcome = (playerWeapon, computerWeapon) => {
@@ -53,8 +64,14 @@ class App extends Component {
           />{" "}
         </button>
         <p>
-          <strong>Choose your weapon!</strong>
+          <strong>Choose your weapon!</strong> <br/> <br/>
         </p>
+        <div>
+          <h3>
+            Player unleashed <i>{this.state.playerWeapon}</i> and computer armed <i>{this.state.computerWeapon}</i>
+          </h3>
+          <h2 id="outcome">{this.state.outcome}</h2>
+        </div>
       </div>
     );
   }
