@@ -21,14 +21,14 @@ class App extends Component {
   };
 
   outcome = (playerWeapon, computerWeapon) => {
-    if (playerWeapon == computerWeapon) {
+    if (playerWeapon === computerWeapon) {
       return "Stalemate, draw";
     }
 
     if (
-      (playerWeapon == "rock" && computerWeapon == "scissors") ||
-      (playerWeapon == "paper" && computerWeapon == "rock") ||
-      (playerWeapon == "scissors" && computerWeapon == "paper")
+      (playerWeapon === "rock" && computerWeapon === "scissors") ||
+      (playerWeapon === "paper" && computerWeapon === "rock") ||
+      (playerWeapon === "scissors" && computerWeapon === "paper")
     ) {
       return "Player is victorious";
     } else {
