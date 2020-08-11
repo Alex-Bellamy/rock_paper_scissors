@@ -37,3 +37,8 @@ button {
     background-color: #13090b;
     color: #663322;
   }
+
+  #score {
+    color: #428040;
+    display: inline-block;
+  }

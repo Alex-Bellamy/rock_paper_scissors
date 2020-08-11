@@ -73,8 +73,8 @@ class App extends Component {
             Player unleashed <i>{this.state.playerWeapon}</i> and computer armed <i>{this.state.computerWeapon}</i>
           </h3>
           <h2 id="outcome">{this.state.outcome}</h2>
-          <p id="score">Player: {this.state.playerWins}</p>
-          <p id="score">Computer: {this.state.computerWins}</p>
+          <p id="score">Player: {this.state.playerWins} |</p>
+          <p id="score"> Computer: {this.state.computerWins}</p>
         </div>
       </div>
     );
