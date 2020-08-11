@@ -7,6 +7,8 @@ class App extends Component {
     playerWeapon: [],
     computerWeapon: [],
     outcome: [],
+    playerWins: 0,
+    computerWins: 0,
   };
 
   startGame = (e) => {
@@ -30,8 +32,10 @@ class App extends Component {
       (playerWeapon === "paper" && computerWeapon === "rock") ||
       (playerWeapon === "scissors" && computerWeapon === "paper")
     ) {
+      this.setState({ playerWins: this.state.playerWins + 1 });
       return "Player is victorious";
     } else {
+      this.setState({ computerWins: this.state.computerWins + 1 });
       return "Whipped by a computer";
     }
   };
@@ -69,6 +73,8 @@ class App extends Component {
             Player unleashed <i>{this.state.playerWeapon}</i> and computer armed <i>{this.state.computerWeapon}</i>
           </h3>
           <h2 id="outcome">{this.state.outcome}</h2>
+          <p id="score">Player: {this.state.playerWins}</p>
+          <p id="score">Computer: {this.state.computerWins}</p>
         </div>
       </div>
     );
