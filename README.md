@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Craft Academy Tech Interview Simulation - Rock Paper Scissors
+[Deployed at](https://rock-paper-scisso-s.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69e06c60-e33a-4572-9ed4-e2eea5f9564a/deploy-status)](https://app.netlify.com/sites/rock-paper-scisso-s/deploys)
 
-## Available Scripts
+## The challenge
+Build a Rock Paper Scissors game as part of a hiring process which included two interviews, pre and post implementing the game. The rules are: <br />
+```
+Rock vs Paper -> Paper wins
+Rock vs Scissors -> Rock wins
+Paper vs Scissors -> Scissors wins
+```
+It was totally up me how I wanted to work, what programming language I wanted to use, if I wanted to deliver game logic only or build a web based interface where a player is challenged by the computer or where two players can play against each other. 
 
-In the project directory, you can run:
+In my game the user can play against the computer that randomly chooses a weapon, the player or the computer get a point for each win.
 
-### `yarn start`
+## Tech and packages
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+React <br />
+Cypress testing framework
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup
+You can fork this repo to your own GitHub account or clone it directly to your local drive. 
 
-### `yarn test`
+Install all packages by running the command:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+``` $ yarn ```
 
-### `yarn build`
+Run the app in development mode:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` $ yarn start ```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Start Cypress and run the tests:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+``` $ yarn cy:open ```
