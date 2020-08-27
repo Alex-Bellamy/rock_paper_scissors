@@ -15,8 +15,10 @@ In my game the user can play against the computer that randomly chooses a weapon
 
 ## Tech and packages
 
-React <br />
-Cypress testing framework
+<ul>
+<li> React <br />
+<li> Cypress testing framework
+</ul>
 
 ## Setup
 You can fork this repo to your own GitHub account or clone it directly to your local drive. 
