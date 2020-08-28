@@ -1,5 +1,5 @@
 # Craft Academy Tech Interview Simulation - Rock Paper Scissors
-[Deployed at](https://rock-paper-scisso-s.netlify.app)
+[Deployed at Netlify](https://rock-paper-scisso-s.netlify.app) <br />
 [![Netlify Status](https://api.netlify.com/api/v1/badges/69e06c60-e33a-4572-9ed4-e2eea5f9564a/deploy-status)](https://app.netlify.com/sites/rock-paper-scisso-s/deploys)
 
 ## The challenge
