@@ -34,3 +34,6 @@ Run the app in development mode:
 Start Cypress and run the tests:
 
 ``` $ yarn cy:open ```
+
+## License
+This app is open source software [licensed as MIT](https://mit-license.org/).
